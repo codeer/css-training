@@ -1,0 +1,24 @@
+{
+  "name": "css-training",
+  "version": "1.0.0",
+  "author": "bjorn-rombaut <bjorn.rombaut@codeer.be>",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "scripts": {
+    "build": "postcss ./src/index.*css -o ./tmp/index.css -m",
+    "watch": "yarn run build -w",
+    "server": "browser-sync start --c ./bs.config.js",
+    "start": "yarn run build && npm-run-all --parallel server watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0",
+    "precss": "^3.1.2"
+  }
+}
