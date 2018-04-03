@@ -14,11 +14,12 @@
     "start": "yarn run build && npm-run-all --parallel server watch"
   },
   "devDependencies": {
+    "@csstools/postcss-sass": "^2.0.0",
     "autoprefixer": "^8.2.0",
     "browser-sync": "^2.23.6",
     "cssnano": "^3.10.0",
     "npm-run-all": "^4.1.2",
-    "postcss-cli": "^5.0.0",
-    "precss": "^3.1.2"
-  }
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {}
 }
